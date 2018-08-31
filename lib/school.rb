@@ -3,15 +3,11 @@ class School
   def initialize(name)
     @name = name
     @roster = {}
-
   end
   
   def self.add_student(student,grade)
-    @student << student
-    @grade << grade
-    @roster.each do |k,v|
-      k = grade
-      v = student
+    @roster[grade] = []
+    @roster[grade] << student
   end
   
 end
