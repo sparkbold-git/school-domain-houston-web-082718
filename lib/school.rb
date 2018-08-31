@@ -5,7 +5,7 @@ class School
     @roster = {}
   end
   
-  def self.add_student(student,grade)
+  def add_student(student,grade)
     @roster[grade] = []
     @roster[grade] << student
   end
