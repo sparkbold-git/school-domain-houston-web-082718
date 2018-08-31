@@ -1,13 +1,17 @@
 class School
-  attr_accessor :roster, :student
+  attr_accessor :roster
   def initialize(name)
     @name = name
     @roster = {}
-    @student = []
+
   end
   
-  def add_student(student)
+  def self.add_student(student,grade)
     @student << student
+    @grade << grade
+    @roster.each do |k,v|
+      k = grade
+      v = student
   end
   
 end
