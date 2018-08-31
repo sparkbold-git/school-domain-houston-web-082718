@@ -3,12 +3,14 @@ class School
   def initialize(name)
     @name = name
     @roster = {}
-    @roster[@grade] = []
-    @grade = ''
+    @students =[]
   end
   
   def add_student(student,grade)
-    @roster[grade] << student
+    @roster.each do |each_grade, student_array|
+      each_grade = grade
+      student_array << student
+    end
   end
   
 end
