@@ -7,9 +7,10 @@ class School
   end
   
   def add_student(student,grade)
-    @roster.each do |each_grade, student_array|
-      each_grade = grade
-      student_array << student
+    if @roster[grade] = nil 
+      @roster[grade] = []
+    else
+      @roster[grade] << student
     end
   end
   
