@@ -15,8 +15,7 @@ class School
   
   
   def grade(num)
-    @roster[num].values
-    
+    @roster[num]
   end
   
 end
